@@ -558,7 +558,9 @@ public class wemeListener extends wemeGrammarBaseListener{
 
             try {
                 if(ctx.getChild(0) == ctx.IDENT() && ctx.getParent().getChildCount() > 1 && ctx.getParent().getChild(1).getChildCount() > 0 && ctx.getParent().getChild(1).getChild(0).toString().equals("(")){
-                    writer.write("new ");
+                    if(functionNames.stream().noneMatch(name -> name.a.equals(ctx.IDENT().toString()))){
+                        writer.write("new ");
+                    }
                 }
                 if(ctx.getChild(0) != ctx.LBRACKET()){
                     writer.write(ctx.getChild(0).toString());

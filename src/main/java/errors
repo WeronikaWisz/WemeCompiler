@@ -1,0 +1,4 @@
+Weme Compiler
+line 6: there is no variable or parameter named "b"
+line 13: function named "show" already exists
+line 16: wrong number of parameters in function "square"
