@@ -1,0 +1,16 @@
+class Math{
+    square(n){
+        return n * n;
+    }
+    pi(){
+        b = 5;
+        return 22/7;
+    }
+}
+fun show(){
+    print("show");
+}
+fun show(){
+    print("show 2");
+}
+print "Circle area with r = 3 is equal " + Math().square(3, 7) * Math().pi();

@@ -1,0 +1,33 @@
+class Vehicle {
+    speed(x, y){
+        var z = x*y;
+        print "My speed is " + z;
+    }
+
+    brand(x){
+        var s = 3;
+        for(var i=0; i<x; i=i+1){
+            s = s+i;
+        }
+        return i;
+    }
+}
+
+class Bike inherit Vehicle {
+  ride() {
+    print "Ride!";
+  }
+}
+
+class Car inherit Vehicle {
+  refuel(a, b) {
+    super.speed();
+    var r = Bike();
+    r.ride();
+    print "I'll have a little drink of " + a + b;
+  }
+}
+
+var c1 = Car();
+c1.refuel(100,"litrow");
+Car().refuel(100,"litrow");

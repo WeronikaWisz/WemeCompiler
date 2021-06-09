@@ -1,0 +1,41 @@
+var a = 10;
+var b = -a;
+
+while (a > 0) {
+  print a
+  a = a - 1 + b * c / 3 + 2 - 1;
+  b = 8;
+
+  if(a == 1){
+    print "ok";
+  } else {
+    print "not ok";
+  }
+
+  if(a != b){
+    print "ok";
+  }
+
+  if(!true or a == 2){
+    print "not ok";
+  }
+
+  for(var i = 0; i<5; i=i+1) {
+      print i;
+    }
+
+  for( i = 0; i<5; i=i+1) {
+    print i;
+  }
+
+  for(; i<5; i=i+1) {
+      print i;
+      var a = a + 1;
+      a = 2;
+    }
+
+    for(;;) {
+          print i;
+
+        }
+}

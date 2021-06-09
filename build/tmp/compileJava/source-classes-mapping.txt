@@ -1,0 +1,40 @@
+wemeGrammarLexer.java
+ wemeGrammarLexer
+wemeGrammarParser.java
+ wemeGrammarParser
+ wemeGrammarParser$AndOperationContext
+ wemeGrammarParser$ArgumentsContext
+ wemeGrammarParser$AssignmentContext
+ wemeGrammarParser$BlockContext
+ wemeGrammarParser$CallContext
+ wemeGrammarParser$ClassDeclarationContext
+ wemeGrammarParser$CompOperationContext
+ wemeGrammarParser$DeclarationContext
+ wemeGrammarParser$EqOperationContext
+ wemeGrammarParser$ExpressionContext
+ wemeGrammarParser$ForStContext
+ wemeGrammarParser$FunDeclarationContext
+ wemeGrammarParser$FunctionContext
+ wemeGrammarParser$GroupContext
+ wemeGrammarParser$IfElseStContext
+ wemeGrammarParser$IfStContext
+ wemeGrammarParser$MulOperationContext
+ wemeGrammarParser$OrOperationContext
+ wemeGrammarParser$ParametersContext
+ wemeGrammarParser$PrimaryContext
+ wemeGrammarParser$PrintStContext
+ wemeGrammarParser$ProgramContext
+ wemeGrammarParser$ReturnStContext
+ wemeGrammarParser$StatementContext
+ wemeGrammarParser$SumOperationContext
+ wemeGrammarParser$UnaryContext
+ wemeGrammarParser$VarDeclarationContext
+ wemeGrammarParser$WhileStContext
+wemeGrammarListener.java
+ wemeGrammarListener
+wemeGrammarBaseListener.java
+ wemeGrammarBaseListener
+Main.java
+ Main
+wemeListener.java
+ wemeListener

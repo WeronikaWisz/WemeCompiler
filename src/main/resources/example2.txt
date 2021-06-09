@@ -1,0 +1,14 @@
+fun addNumbers(a, b, c) {
+  return a + b;
+}
+
+fun identity(a) {
+  return a;
+}
+
+fun show(){
+    print("show");
+}
+
+print identity(addNumbers(1,2,3));
+addNumbers(1,2,3);

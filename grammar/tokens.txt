@@ -1,0 +1,54 @@
+STRING : ‘“‘ .* ‘“‘;
+NUMBER: ('-')? (Digits | Digits ‘.’ Digits);
+IDENT: Letter LetterOrDigit*;
+TRUE : 'true' ;
+FALSE : 'false';
+NULL : 'null';
+AND:‘and’;
+OR: ‘or’;
+NOT: ‘!’;
+IF: ‘if’;
+ELSE : ‘else’;
+FOR: ‘for’;
+WHILE: ‘while’;
+FUNCTION: ‘fun’;
+CLASS: ‘class’;
+PRINT: ‘print’;
+RETURN: ‘return’;
+SUPER: ‘super’;
+THIS: ‘this’;
+VAR: ‘var’;
+COLON : ':' ;
+SEMICOLON: ‘;’;
+COMMA : ',' ;
+DOT: ‘.’;
+MINUS: ‘-’;
+PLUS: ‘+’;
+DIV: ‘/’;
+MUL: ‘*’;
+EQUAL: ‘=’;
+DOUBLE_EQUAL: ‘==’;
+NOT_EQUAL: ‘!=’;
+GREATER: ‘>’;
+GREATER_EQUAL: ‘>=’;
+LESS: ‘<’;
+LESS_EQUAL: ‘<=’;
+LBRACKET : ‘(‘;
+RBRACKET : ‘)’;
+LBRACE : '{' ;
+RBRACE : '}' ;
+INHERIT : ‘inherit’’;
+EOF;
+
+fragment Letter
+	: [a-zA-Z$_]
+        ;
+
+fragment LetterOrDigit
+       : Letter
+       | [0-9]
+       ;
+
+fragment Digits
+	: (0 | ([1-9] [0-9]*))
+	;
