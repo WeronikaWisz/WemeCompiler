@@ -1,17 +1,54 @@
 //Source code compiled from Weme language
-class Math {
-	square(n){
-		return n * n;
-	}
-	pi(){
-		b = 5;
-		return 22 / 7;
+class Shape {
+	sayName(){
+		console.log("I'm Shape");
 	}
 }
-function show(){
-	console.log(("show"));
+class Circle extends Shape {
+	sayName(){
+		super.sayName();
+		console.log("And a Circle to be specific");
+	}
+	area(r){
+		return r * r * 22 / 7;
+	}
+	circuit(r){
+		return 2 * r * 22 / 7;
+	}
 }
-function show(){
-	console.log(("show 2"));
+class Rectangle extends Shape {
+	sayName(){
+		super.sayName();
+		console.log("And a Rectangle to be specific");
+	}
+	area(a,b){
+		return a * b;
+	}
+	circuit(a,b){
+		return 2 * a + 2 * b;
+	}
 }
-console.log("Circle area with r = 3 is equal " + new Math().square(3, 7) * new Math().pi());
+class Square extends Shape {
+	sayName(){
+		super.sayName();
+		console.log("And a Square to be specific");
+	}
+	area(a){
+		return a * a;
+	}
+	circuit(a){
+		return 4 * a;
+	}
+}
+var c = new Circle(); 
+var r = new Rectangle(); 
+var s = new Square(); 
+c.sayName();
+console.log("My area with r = 2" + c.area(2));
+console.log("My circuit with r = 2" + c.circuit(2));
+r.sayName();
+console.log("My area with a = 2, b = 3" + r.area(2, 3));
+console.log("My circuit with a = 2, b = 3" + r.circuit(2, 3));
+s.sayName();
+console.log("My area with a = 2" + s.area(2));
+console.log("My circuit with a = 2" + s.circuit(2));

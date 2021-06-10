@@ -1,16 +1,57 @@
-class Math{
-    square(n){
-        return n * n;
-    }
-    pi(){
-        b = 5;
-        return 22/7;
+class Shape{
+    sayName(){
+        print "I'm Shape";
     }
 }
-fun show(){
-    print("show");
+
+class Circle inherit Shape{
+    sayName(){
+        super.sayName();
+        print "And a Circle to be specific";
+    }
+    area(r){
+        return r*r*22/7;
+    }
+    circuit(r){
+        return 2*r*22/7;
+    }
 }
-fun show(){
-    print("show 2");
+
+class Rectangle inherit Shape{
+    sayName(){
+        super.sayName();
+        print "And a Rectangle to be specific";
+    }
+    area(a, b){
+        return a*b;
+    }
+    circuit(a, b){
+        return 2*a+2*b;
+    }
 }
-print "Circle area with r = 3 is equal " + Math().square(3, 7) * Math().pi();
+
+class Square inherit Shape{
+    sayName(){
+        super.sayName();
+        print "And a Square to be specific";
+    }
+    area(a){
+        return a*a;
+    }
+    circuit(a){
+        return 4*a;
+    }
+}
+
+var c = Circle();
+var r = Rectangle();
+var s = Square();
+c.sayName();
+print "My area with r = 2" + c.area(2);
+print "My circuit with r = 2" + c.circuit(2);
+r.sayName();
+print "My area with a = 2, b = 3" + r.area(2, 3);
+print "My circuit with a = 2, b = 3" + r.circuit(2, 3);
+s.sayName();
+print "My area with a = 2" + s.area(2);
+print "My circuit with a = 2" + s.circuit(2);

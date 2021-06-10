@@ -6,7 +6,7 @@ const { exec } = require("child_process");
 
 fastify.register(require("fastify-static"), {
   root: path.join(__dirname, "public"),
-  prefix: "/public/",
+  prefix: "/weme/",
 });
 
 fastify.get("/", async (request, reply) => {
@@ -40,7 +40,6 @@ fastify.post("/interpret", async (request, reply) => {
   });
 });
 
-// Run the server!
 const start = async () => {
   try {
     await fastify.listen(3000);

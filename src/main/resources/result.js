@@ -1,22 +1,12 @@
 //Source code compiled from Weme language
-class Car extends Vehicle {
-	refuel(){
-		super.refuel();
-		console.log("I'll have a little drink");
-	}
+function addNumbers(a,b,c){
+	return a + b;
 }
-class Bike {
-	speed(){
-		super.speed();
-	}
-	ride(){
-		this.speed();
-		this.slow();
-	}
+function identity(a){
+	return a;
 }
-class SportBike extends Bike {
-	speed(){
-		super.speed();
-		super.sp();
-	}
+function show(){
+	console.log(("show"));
 }
+console.log(identity(addNumbers(1, 2, 3)));
+addNumbers(1, 2, 3);

@@ -34,7 +34,7 @@ wemeGrammarListener.java
  wemeGrammarListener
 wemeGrammarBaseListener.java
  wemeGrammarBaseListener
-Main.java
- Main
 wemeListener.java
  wemeListener
+Main.java
+ Main

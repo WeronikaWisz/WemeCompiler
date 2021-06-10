@@ -1,4 +1,12 @@
 Weme Compiler
-line 6: there is no variable or parameter named "b"
-line 13: function named "show" already exists
-line 16: wrong number of parameters in function "square"
+a Circle to be specific
+My area with r = 212.571428571428571
+My circuit with r = 212.571428571428571
+I'm Shape
+And a Rectangle to be specific
+My area with a = 2, b = 36
+My circuit with a = 2, b = 310
+I'm Shape
+And a Square to be specific
+My area with a = 24
+My circuit with a = 28
